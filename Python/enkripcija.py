@@ -12,7 +12,7 @@ def enkripcija(a, key):
         else:
             x += y
     return x
-    
+
 def dekripcija(a, key):
     x = ""
     for i in range(0, len(a), 3):
