@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+import webbrowser
+
+url = "http://www.facebook.com"
+webbrowser.Chromium.open(url, 1)

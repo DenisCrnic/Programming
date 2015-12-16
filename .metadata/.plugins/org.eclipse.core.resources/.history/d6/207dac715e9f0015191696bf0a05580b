@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class test {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnesite prvi stavek: ");
+		String a = input.nextLine();
+		System.out.print("Vnesite drugi stavek: ");
+		String b = input.nextLine();
+		stavekKiImaVecSam(a, b);
+		input.close();
+	}
+	
+	public static void stavekKiImaVecSam(String a, String b){
+		char[] samoglasniki = {'a', 'e', 'i', 'o', 'u'};
+		int samInA = 0, samInB = 0;
+		for (int i = 0; i < samoglasniki.length; i++){
+			for (int j = 0; j < a.length(); j++){
+				if (a.charAt(j) == samoglasniki[i])
+					samInA++;
+			}
+		}
+		for (int i = 0; i < samoglasniki.length; i++){
+			for (int j = 0; j < b.length(); j++){
+				if (b.charAt(j) == samoglasniki[i])
+					samInB++;
+			}
+		}
+		System.out.println("Samostalnikov v a: " + samInA);
+		System.out.println("Samostalnikov v b: " + samInB);
+	}
+}

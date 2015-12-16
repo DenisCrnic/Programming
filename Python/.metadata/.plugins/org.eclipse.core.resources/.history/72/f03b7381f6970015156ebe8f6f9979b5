@@ -1,0 +1,4 @@
+#-*-encoding: utf-8-*-
+import formatter
+a = "ma sam kej {0}".format('a')
+print a

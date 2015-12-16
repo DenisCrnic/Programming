@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Naloga9 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnos prve besede: ");
+		String a = input.next();
+		int stSamoglasnikov = 0;
+		/*System.out.print("Vnos druge besede: ");
+		String b = input.next();*/
+		char[] samoglasniki = {'a', 'e', 'i', 'o', 'u'};
+		for(int i = 0; i < a.length()-1; i++){
+			for(int j = 0; i < samoglasniki.length; j++){
+				System.out.print(i);
+				/*if(a.charAt(i) == samoglasniki[j]){
+					stSamoglasnikov++;
+				*/}
+			}
+		}
+		System.out.println(stSamoglasnikov);
+	}
+}

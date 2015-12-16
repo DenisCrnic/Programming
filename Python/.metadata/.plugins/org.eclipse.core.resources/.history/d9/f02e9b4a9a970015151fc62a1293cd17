@@ -1,0 +1,12 @@
+def createJavaTable(a, name):
+    x = "String[] " + str(name) + " = {"
+    for i in range(0,len(a)-1):
+        if(i == (len(a)-1)):
+            x += str(i)
+        else:
+            x += str(i) + ','
+    x += '};'
+    print x
+
+x = ["denis", "tadej"]
+createJavaTable(x, "java.exe")

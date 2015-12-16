@@ -1,0 +1,12 @@
+def createPythonTable(a, name):
+    x = str(name) + " = ["
+    for i in range(0,len(a)):
+        if(i == (len(a)-1)):
+            x += a[i]
+        else:
+            x += a[i] + ','
+    x += ']'
+    print x
+
+x = ["denis", "tadej"]
+createJavaTable(x, "java.exe")

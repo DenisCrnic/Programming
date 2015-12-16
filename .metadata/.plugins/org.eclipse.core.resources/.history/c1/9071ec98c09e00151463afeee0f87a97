@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+
+x, y = 10, 20
+
+a = 10 if (True) else 20
+print a

@@ -1,0 +1,7 @@
+#-*-encoding: utf-8-*-
+import webbrowser
+import requests
+
+a = ["https://media.8ch.net/gore/src/1433318616328-0.png"]
+while True:
+    webbrowser.open("http://")

@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+x = 10
+y = 20
+print repr((x, y, ('spam', 'eggs')))

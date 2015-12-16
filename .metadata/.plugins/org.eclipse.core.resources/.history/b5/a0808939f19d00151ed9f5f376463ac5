@@ -1,0 +1,11 @@
+#-*-encoding: utf-8-*-
+from functions import *
+from string import Formatter
+
+a = {"denis" : "črnič",
+     "tadej" : "črnič",
+     "žan" : "spehonja žibrat",
+     "erik" : "maček"}
+
+for i in a:
+    print Formatter("{0}", "denis")

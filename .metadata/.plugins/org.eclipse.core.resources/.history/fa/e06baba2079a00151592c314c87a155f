@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+a = [["denis", "tadej", "simona"],["erik","aleks"],["zan"]]
+b = ["denis", "tadej", "simona"]
+printArray(a)

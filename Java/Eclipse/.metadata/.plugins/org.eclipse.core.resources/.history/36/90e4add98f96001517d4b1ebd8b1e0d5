@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Naloga3 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnos besede: ");
+		String a = input.next();
+		System.out.print("Vnos črke: ");
+		char c = input.next().charAt(0);
+		StringBuffer b = new StringBuffer(a);
+		for(int i=1; i<b.length(); i++)
+			b.deleteCharAt(i);
+		System.out.println("Izpis: "+b);
+		input.close();
+	}
+}

@@ -1,0 +1,11 @@
+#-*- encoding: utf-8 -*-
+
+import webbrowser
+
+url = raw_input("Input url: http://")
+try:
+    times = input("How many times do you want to open this tab: ")
+except:
+    "Input number!"
+for i in range(times):
+    webbrowser.open(url)

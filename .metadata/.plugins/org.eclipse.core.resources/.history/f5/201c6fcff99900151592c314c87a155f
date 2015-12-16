@@ -1,0 +1,8 @@
+#-*- encoding: utf-8 -*-
+
+import webbrowser
+
+url = raw_input("input url: ")
+times = raw_input("How many times do you want to open this tab: ")
+for i in range(times):
+    webbrowser.open(url)

@@ -1,0 +1,23 @@
+#-*- coding: utf-8 -*-
+import sys
+def denkripcija(a, key):
+    x = ""
+    for i in a:
+        if(len(str(ord(i)))==1):
+           x = "00"+str(ord(i))
+        elif(len(str(ord(i)))==2):
+            x = "0"+str(ord(i))
+        else:
+            x = str(ord(i))
+        sys.stdout.write(x)
+def enkripcija(a, key):
+    """ """
+while True:
+    a = raw_input("Vnesite besedilo: ")
+    while True:
+        try:
+            b = input("Vnesite kljuc: ")
+            break
+        except:
+            print "vnos mora biti stevilo"
+    print enkripcija(a, b)

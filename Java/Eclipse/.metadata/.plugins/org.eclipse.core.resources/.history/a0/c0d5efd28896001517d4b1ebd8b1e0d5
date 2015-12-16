@@ -1,0 +1,12 @@
+import java.util.*;
+public class Vaje {
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		String a=input.next();
+		StringBuffer b=new StringBuffer(a);
+		b.append('a');
+		System.out.print(a);
+		
+		input.close();
+	}
+}

@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+
+from browser import open
+
+open("http://www.facebook.com")

@@ -1,0 +1,24 @@
+#-*-coding: utf-8-*-
+from encodings.idna import ToASCII
+
+def compare(a, b):
+    #Če je a večji kot b ali sta enaka
+    if(len(a) > len(b) or len(a) == len(b)):
+        #Gre zanka od indexa 0 do dolžine b-ja
+        for i in range(0, len(b)):
+            #Če črke na indexih niste enaki
+            if(ord(a[i]) != ord(b[i])):
+                #Vrne razliko a - b
+                return ord(a[i]) - ord(b[i])
+            #Če sta enake nadaljuje
+            else:
+                continue
+    else:
+        for i in range(0, len(a)):
+            if(ord(a[i]) != ord(b[i])):
+                return ord(a[i]) - ord(b[i])
+
+a = raw_input("A: ")
+b = raw_input("B: ")
+
+print compare(a, b)

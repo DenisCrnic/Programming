@@ -1,0 +1,13 @@
+#-*- encoding: utf-8 -*-
+
+a = ["denis"]
+
+b = ["majkemi"]
+
+try:
+    a.remove(raw_input("kater item: "))
+except:
+    print "no such item"
+a.extend(b)
+for i in a:
+    print i

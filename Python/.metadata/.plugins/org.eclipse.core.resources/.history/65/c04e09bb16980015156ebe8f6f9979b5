@@ -1,0 +1,13 @@
+#-*-coding: utf-8-*-
+from encodings.idna import ToASCII
+
+a = raw_input("A: ")
+b = raw_input("B: ")
+
+if(len(a) > len(b) or len(a) == len(b)):
+    for i in range(0, len(b)):
+        if(ord(a[i]) != ord(b[i])):
+           print i,".",a[i], "ni enak", b[i]
+else:
+    for i in range(0, len(a))
+    

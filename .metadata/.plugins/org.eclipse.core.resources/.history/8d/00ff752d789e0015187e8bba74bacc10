@@ -1,0 +1,14 @@
+#-*-encoding: utf-8-*-
+
+dixtEx = {"denis" : "crnic",
+          "tadej" : "crnic",
+          "erik" : "macek"
+          }
+
+print dixtEx
+
+dixtEx["zan"] = "spehonja"
+print sorted(dixtEx.values())
+print sorted(dixtEx.keys())
+dixtEx = sorted(dixtEx)
+print dixtEx

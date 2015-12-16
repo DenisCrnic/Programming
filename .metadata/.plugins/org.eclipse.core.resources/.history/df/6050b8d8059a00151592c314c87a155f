@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+
+print x
+a = ["Denis", "Tadej", "Žan"]
+b = ["majka", "Danilo", "mavri"]
+
+print a<b

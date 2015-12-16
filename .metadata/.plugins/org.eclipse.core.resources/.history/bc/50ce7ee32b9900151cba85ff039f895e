@@ -1,0 +1,8 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def print_array(a):
+    for i in a:
+        print "-",i
+a = ["denis", "majkam"]
+print next(a)

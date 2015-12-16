@@ -1,0 +1,7 @@
+#-*- coding: utf-8 -*-
+from encodings.idna import ToASCII
+
+a = []
+stevci = []
+for i in range(ord("a"), ord("z")+1):
+    stevci.append(chr(i))

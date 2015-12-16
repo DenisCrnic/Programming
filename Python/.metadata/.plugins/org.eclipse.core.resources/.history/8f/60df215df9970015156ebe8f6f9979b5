@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+import formatter
+from UserString import MutableString
+x = input("Vnos besede: ")
+for i in range(-(len(str(x))), 0):
+    print str(x)[i]

@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+import formatter
+
+x = "0123456789"
+y = x[2::2]
+print y

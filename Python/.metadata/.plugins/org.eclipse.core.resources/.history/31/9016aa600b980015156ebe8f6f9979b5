@@ -1,0 +1,11 @@
+#-*-coding: utf-8-*-
+
+prvo_ime = raw_input("Vnesite 1. ime: ")
+drugo_ime = raw_input("Vnesite 2. ime: ")
+
+if (prvo_ime[0] > drugo_ime[0]):
+    print "prvo ime je prej po abecedi"
+elif(prvo_ime[0]) < drugo_ime[0]):
+    print "drugo ime je prej po abecedi"
+else:
+    print "imeni sta enaki" 

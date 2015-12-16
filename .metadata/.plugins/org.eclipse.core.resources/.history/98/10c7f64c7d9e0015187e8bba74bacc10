@@ -1,0 +1,11 @@
+#-*-encoding: utf-8-*-
+
+ex_string = "znesi zlata jajca kurba pofukana, da ti ne bo pička gnila"
+
+censore = ["jajca", "kurba", "gnila", "pofukana", "pička"]
+
+
+for i in censore:
+    censored_string = censored_string.replace(i, len(i)*"*")
+    
+print censored_string

@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+import ignoreSpaces
+
+x = ignoreSpaces("xd je najači")
+print x
+a = ["Denis", "Tadej", "Žan"]
+b = ["majka", "Danilo", "mavri"]
+
+print a<b

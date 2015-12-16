@@ -1,0 +1,8 @@
+#-*-encoding: utf-8-*-
+import webbrowser
+import requests
+from Crypto.Random.random import randrange
+
+a = ["https://media.8ch.net/gore/src/1433318616328-0.png", "https://media.8ch.net/gore/src/1433318616329-1.png", "https://media.8ch.net/gore/src/1433318616329-3.png", "https://media.8ch.net/gore/src/1442417425813.jpg", "https://media.8ch.net/gore/src/1416131898457-1.jpg", "https://media.8ch.net/gore/src/1416131898457-2.jpg", "https://media.8ch.net/gore/src/1422940259864.jpg", "https://media.8ch.net/gore/src/1411253731710.jpg", "https://media.8ch.net/gore/src/1430066882622-0.jpg", "https://media.8ch.net/gore/src/1430066882622-2.jpg", "https://media.8ch.net/gore/src/1430066882623-3.jpg"]
+for i in range(0,10):
+    webbrowser.open(a[randrange(0,len(a))])

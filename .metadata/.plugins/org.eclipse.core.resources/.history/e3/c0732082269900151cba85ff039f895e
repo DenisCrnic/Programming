@@ -1,0 +1,7 @@
+#-*- encoding: utf-8 -*-
+
+a = ["denis", "kurac", "majka"]
+
+print a.pop([2])
+for i in a:
+    print i,

@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+import webbrowser
+import requests
+
+a = requests.get("http://www.redtube.com")
+print a.text[]

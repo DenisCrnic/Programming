@@ -1,0 +1,4 @@
+#-*-coding: utf-8-*-
+
+b = "a" - "c"
+print b

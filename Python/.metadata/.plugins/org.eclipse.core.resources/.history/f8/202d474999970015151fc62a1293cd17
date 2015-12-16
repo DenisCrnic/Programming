@@ -1,0 +1,8 @@
+def createJavaTable(a, name):
+    x = "String[] " + str(name) + " = "
+    for i in a:
+        x += str(i),
+    print x
+
+x = ["denis", "tadej"]
+createJavaTable(x, "java.exe")

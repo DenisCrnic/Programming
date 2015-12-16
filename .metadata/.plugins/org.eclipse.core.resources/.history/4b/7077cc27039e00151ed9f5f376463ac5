@@ -1,0 +1,27 @@
+#-*-encoding: utf-8-*-
+import time
+time_list = {"hours" : 0, "minutes" : 0, "seconds" : 0}
+
+while True:
+    time_list["seconds"] += 1
+    if (time_list["seconds"] == 60):
+        time_list["minutes"] += 1
+        time_list["seconds"] = 0
+        if (time_list["minutes"] == 60):
+            time_list["hours"] += 1
+            time_list["minutes"] = 0
+            time_list["seconds"] = 0
+    if (len(str(time_list["hours"])) < 1):
+            h = "0" + str(time_list["hours"])
+    else:
+        h = str(time_list["hours"])
+    if (len(str(time_list["minutes"])) > 1):
+            m = "0" + str(time_list["minutes"])
+    else:
+        m = str(time_list["minutes"])
+    if (len(str(time_list["seconds"])) >= 1):
+            s = "0" + str(time_list["seconds"])
+    else:
+        s = str(time_list["seconds"])
+    print h + ":" + m + ":" + s
+    time.sleep(1)

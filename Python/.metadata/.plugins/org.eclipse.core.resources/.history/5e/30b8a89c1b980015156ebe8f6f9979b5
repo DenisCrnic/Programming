@@ -1,0 +1,7 @@
+#-*- coding: utf-8 -*-
+a = "denis"
+b = "tadej"
+
+def compareTo(self, that):
+    return ((self > that) - (self < that))
+print a.compareTo(b)

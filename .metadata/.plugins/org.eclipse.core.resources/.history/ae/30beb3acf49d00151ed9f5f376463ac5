@@ -1,0 +1,4 @@
+#-*-encoding: utf-8-*-
+
+
+browser.open_http("www.facebook.com")

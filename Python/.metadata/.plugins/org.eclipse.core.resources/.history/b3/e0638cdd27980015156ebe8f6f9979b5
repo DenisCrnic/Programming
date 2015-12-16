@@ -1,0 +1,15 @@
+#-*- coding: utf-8 -*-
+import sys
+def enkripcija(a, key):
+    x = []
+    for i in a:
+        sys.stdout.write(i)
+while True:
+    a = raw_input("Vnesite besedilo: ")
+    while True:
+        try:
+            b = input("Vnesite kljuc: ")
+            break
+        except:
+            print "vnos mora biti stevilo"
+    print enkripcija(a, b)

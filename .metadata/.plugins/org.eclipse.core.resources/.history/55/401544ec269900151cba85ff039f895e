@@ -1,0 +1,7 @@
+#-*- encoding: utf-8 -*-
+
+a = ["denis", "kurac", "majka"]
+
+a.sort()
+for i in a:
+    print i,

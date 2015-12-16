@@ -1,0 +1,10 @@
+#-*-encoding: utf-8-*-
+from lxml import html
+import requests
+import time
+
+page = requests.get("http://www.deniscrnic.tk")
+time.sleep(10)
+tree = html.fromstring(page.content)
+x = tree.xpath('//*[@id="ember1393"]/ul')
+print x

@@ -1,0 +1,27 @@
+def compare(a, b):
+    """Same as compareTo in Java"""
+    
+    if(a == b):
+        return 0
+    if(len(a) > len(b) or len(a) == len(b)):
+        for i in range(0, len(b)):
+            if(ord(a[i]) != ord(b[i])):
+                return ord(a[i]) - ord(b[i])
+        return len(a)-len(b)
+
+    else:
+        for i in range(0, len(a)):
+            if(ord(a[i]) != ord(b[i])):
+                return ord(a[i]) - ord(b[i])
+        return len(a)-len(b)
+
+def ignoreSpaces(a):
+    """returns a string without spaces"""
+    
+    b = ""
+    for i in a:
+        if(i == ' '):
+            continue
+        else:
+            b += i
+    return b

@@ -1,0 +1,8 @@
+#-*- encoding: utf-8 -*-
+
+a = ["denis"]
+
+b = ["majkemi"]
+a.extend(b)
+for i in a:
+    print i

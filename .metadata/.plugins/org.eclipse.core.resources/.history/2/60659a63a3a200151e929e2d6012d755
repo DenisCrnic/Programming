@@ -1,0 +1,30 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+class Person:
+
+
+    def __init__(self, name, age, height, gender):
+        self.name = name
+        self.age = age
+        self.height = height
+        self.gender = gender
+
+
+    def greeting(self):
+        print 'hello' + self.name
+
+
+    def __str__(self):
+        temp = 'Name: ' + self.name + '\nAge: ' + str(self.age)\
+                + '\nHeight: ' + str(self.height) + '\nGender: ' + self.gender
+        return temp
+
+
+def Main():
+    denis = Human('Denis', 17, 165.5, 'male')
+    print denis
+    denis.greeting()
+
+if __name__ == '__main__':
+    Main()

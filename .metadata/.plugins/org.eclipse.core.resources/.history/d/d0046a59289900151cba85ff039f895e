@@ -1,0 +1,16 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def print_array(a):
+    for i in a:
+        print i,
+    print ""
+
+run = True
+while run:
+    select = raw_input("""\
+TO DO!
+a - add task
+d - remove task
+""")
+    

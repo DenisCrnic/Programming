@@ -1,0 +1,15 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def return_float(x):
+    return(x)
+
+
+def print_array(a):
+    for i in a:
+        print "-",i
+a = ['denis', "majkam"]
+
+
+
+print filter(return_float, range(0, 100))

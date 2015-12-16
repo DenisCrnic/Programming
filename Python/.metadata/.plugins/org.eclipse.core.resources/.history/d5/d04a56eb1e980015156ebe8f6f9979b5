@@ -1,0 +1,6 @@
+#-*- coding: utf-8 -*-
+
+a = "lep dan"
+b = "le"
+if b in a:
+    print "a vsebuje b"

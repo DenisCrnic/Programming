@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class test {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		StringBuffer b = new StringBuffer(input.nextLine()).append('a');
+		int i, y, z =0;
+		System.out.println(b);
+		input.close();
+	}
+}

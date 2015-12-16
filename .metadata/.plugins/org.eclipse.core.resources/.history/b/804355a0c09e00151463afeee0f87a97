@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+
+x, y = 10, 20
+
+a = "x > y" if (x > y) "nigerish" elif (y > x) else ""
+print a

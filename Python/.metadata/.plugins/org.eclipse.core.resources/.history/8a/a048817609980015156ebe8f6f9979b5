@@ -1,0 +1,12 @@
+#-*-coding: utf-8-*-
+from Crypto.Random.random import randrange
+
+vsota = 0
+while(True):
+    a = randrange(-5, 6)
+    if(a == 0):
+        break
+    else:
+        vsota += a
+
+print vsota

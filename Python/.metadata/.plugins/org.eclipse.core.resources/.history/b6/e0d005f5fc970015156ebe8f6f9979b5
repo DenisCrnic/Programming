@@ -1,0 +1,13 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+        if(type(x) == float):
+            print "Vnos mora biti celo število"
+        break
+    except SyntaxError:
+        print "Polje nesme biti prazno"
+    except NameError:
+        print "Vnos mora biti številka"

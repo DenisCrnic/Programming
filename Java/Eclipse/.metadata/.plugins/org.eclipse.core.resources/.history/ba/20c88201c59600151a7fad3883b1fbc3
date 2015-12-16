@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Naloga10 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int[] tab = new int[10];
+		int vsota = 0;
+		int avg = 0;
+		int max = 0;
+		int min = tab[0];
+		int indexMax = 0;
+		for(int i = 0; i < 10; i++){
+			System.out.print("vnesite " + i + ". + stevilo: ");
+			tab[i]=input.nextInt();
+			vsota+=tab[i];
+			if(tab[i] > max){
+				max = tab[i];
+				indexMax = i;
+			}
+			if(tab[i] < min)
+				min = tab[i];
+		}
+		avg = vsota / 10;
+		for(int i = 0; i < 10; i++){
+			System.out.printf(i + "%i", tab[i]);
+		}
+		input.close();
+	}
+}

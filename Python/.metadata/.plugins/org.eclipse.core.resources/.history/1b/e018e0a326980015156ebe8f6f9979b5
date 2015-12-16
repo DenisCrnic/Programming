@@ -1,0 +1,8 @@
+#-*- coding: utf-8 -*-
+
+
+a = "to je neko beseidlo"
+b = ""
+for i in a:
+    b += chr(ord(i) + 10)
+print b

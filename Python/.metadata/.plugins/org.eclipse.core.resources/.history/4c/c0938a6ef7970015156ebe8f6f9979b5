@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+import formatter
+
+x = "abcdef"
+y = x[2::2]
+print y

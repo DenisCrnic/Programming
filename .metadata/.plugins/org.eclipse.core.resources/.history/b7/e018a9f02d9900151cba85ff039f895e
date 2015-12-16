@@ -1,0 +1,16 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def return_float(x):
+    if (type(x) == type(0.0)):
+        return x 
+
+
+def print_array(a):
+    for i in a:
+        print "-",i
+a = ['denis', "majkam"]
+
+
+
+filter(, a)

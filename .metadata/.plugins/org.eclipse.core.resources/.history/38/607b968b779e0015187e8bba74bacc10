@@ -1,0 +1,8 @@
+#-*-encoding: utf-8-*-
+
+dixtEx = {"denis" : "črnič",
+          "tadej" : "črnič".decode("utf-8"),
+          "erik" : "maček"
+          }
+
+print dixtEx

@@ -1,0 +1,32 @@
+#-*- coding: utf-8 -*-
+import sys
+def enkripcija(a, key):
+    x = ""
+    print "0"
+    for i in a:
+        print "1: ",i
+        y = str(ord(i) + key)
+        print "2: ", y
+        if(len(y) == 1):
+            x = x + "00" + y
+            print "3a"
+        elif(len(y) == 2):
+            x = x + "0" + y
+            print "3a"
+        else:
+            x += y
+    return x
+    
+def dekripcija(a, key):
+    for i in range(0, len(a), 3):
+        sys.stdout.write(i:i+3)
+while True:
+    a = raw_input("Vnesite besedilo: ")
+    while True:
+        try:
+            b = input("Vnesite kljuc: ")
+            break
+        except:
+            print "vnos mora biti stevilo"
+    print enkripcija(a, b)
+    dekripcija("141142151146156073147142073151138147149142153238202146073151138073156159142157158", -10)

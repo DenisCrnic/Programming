@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+a = {"denis" : "črnič",
+     "tadej" : "črnič",
+     "žan" : "spehonja žibrat",
+     "erik" : "maček"}
+
+print a.keys()

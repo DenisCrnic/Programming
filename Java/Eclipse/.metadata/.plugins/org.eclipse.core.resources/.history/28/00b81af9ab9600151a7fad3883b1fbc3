@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Naloga5a{
+     public static void main(String []args){
+    	 Scanner input = new Scanner(System.in);
+    	 System.out.print("Vnos: ");
+    	 String a = input.next();
+    	 StringBuffer b = new StringBuffer(a);
+    	 StringBuffer c = new StringBuffer(b);
+    	 if(c==b.reverse()){
+    		 System.out.print("Beseda je palindrom");
+    	 }else{
+    		 System.out.print("Beseda ni plaindrom");
+    	 }
+    	 input.close();
+     }
+}

@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    x = input("Vnos številke: ")

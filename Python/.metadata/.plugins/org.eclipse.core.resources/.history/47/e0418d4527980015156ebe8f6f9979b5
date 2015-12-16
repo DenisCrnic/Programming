@@ -1,0 +1,8 @@
+#-*- coding: utf-8 -*-
+
+key = input("vnesite kljuc: ")
+besedilo = raw_input("vnesite besedilo: ")
+x = ""
+for i in besedilo:
+    x += chr(ord(i) + key)
+print x

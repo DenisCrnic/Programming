@@ -1,0 +1,9 @@
+#-*- coding: utf-8 -*-
+
+a = "lep dan"
+b = "fdsa"
+print a.find(b)
+if b in a:
+    print "a vsebuje", b
+else:
+    print "a ne vsebuje", b

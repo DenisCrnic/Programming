@@ -1,0 +1,13 @@
+#-*-encoding: utf-8-*-
+from lxml import html
+import requests
+import time
+
+while True:
+    page = requests.get("http://www.twitch.tv/tsm_dyrus")
+    tree = html.fromstring(page.content)
+    time.sleep(1)
+    for i in range(0,10000):
+        if (len(tree.xpath('//*[@id="ember'+str(i)+'"]'))!=0):
+            x = tree.xpath('//*[@id="ember'+str(i)+'"]')
+    print x

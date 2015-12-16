@@ -1,0 +1,26 @@
+package Methods;
+
+public class Naloga1 {
+	public static void main(String [] args){
+		kvadrat(10);
+	}
+	public static void kvadrat(int a){
+		for (int i = 1; i <= a; i++){
+			for (int j = 1; j <= a; j++){
+				System.out.print(j == a ? "*\n" : "*");
+			}
+		}
+	}
+	
+	public static int indexMax(int[] a){
+		int maxIndex = 0;
+		int maxSt = a[0];
+		for (int i = 0; i < a.length; i++){
+			if(a[i] > maxSt)
+				maxIndex = i;
+		}
+		return maxIndex;
+	}
+}
+
+

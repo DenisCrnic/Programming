@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+
+name = "denis"
+age = 17.44234
+
+print "%s je star %.1f let" % (name,  age)

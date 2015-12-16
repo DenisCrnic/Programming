@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+import webbrowser
+import requests
+
+print type(requests.get("http://www.redtube.com"))

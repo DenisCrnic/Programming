@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+import formatter
+import sys
+from UserString import MutableString
+x = input("Vnos številke: ")
+for i in range(0, len(str(x))):
+    z = x%10
+    sysy.stdout.write(z)
+    x/=10

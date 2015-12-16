@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+    except Exception as exception:
+        assert type(exception).__name__ == 'NameError'
+        assert exception.__class__.__name__ == 'NameError'

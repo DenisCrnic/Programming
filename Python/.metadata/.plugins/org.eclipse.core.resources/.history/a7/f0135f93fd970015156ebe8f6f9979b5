@@ -1,0 +1,8 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+import random
+from Crypto.Random.random import randrange
+
+for i in range(0,10):
+    print randrange(-5, 5),

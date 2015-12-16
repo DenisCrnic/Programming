@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+
+x, y = 10, 20
+
+print "to je true" if (True) else "ni true"

@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+
+list1 = ["denis"]
+list1.append("tadej")
+list1 = "ma kej je "
+print type(list1)

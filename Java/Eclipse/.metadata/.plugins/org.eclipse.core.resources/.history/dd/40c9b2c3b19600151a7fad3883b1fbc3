@@ -1,0 +1,9 @@
+public class Naloga6{
+     public static void main(String []args){
+    	 
+     }
+     
+     public int randomRange(int a, int b){
+    	 
+     }
+}

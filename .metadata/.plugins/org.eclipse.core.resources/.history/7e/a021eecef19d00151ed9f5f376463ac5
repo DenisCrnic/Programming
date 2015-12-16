@@ -1,0 +1,10 @@
+#-*-encoding: utf-8-*-
+import functions
+from string import Formatter
+
+a = {"denis" : "črnič",
+     "tadej" : "črnič",
+     "žan" : "spehonja žibrat",
+     "erik" : "maček"}
+
+functions.compareTo(a[0], a[1])

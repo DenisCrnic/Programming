@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Vaja {
+ public static void main(String[]pickazlicka){
+  Scanner vh=new Scanner(System.in);
+  
+  int kol=0, f=0;
+  String crka=vh.next();
+  
+  StringBuffer bf=new StringBuffer(vh.nextLine());
+  bf=bf.insert(bf.length(),"a");
+  for(int y=1;y<bf.length();y++){
+   f=bf.indexOf(crka,y);
+   if(f>-1)kol++;
+  }
+  System.out.println(kol);
+  System.out.println(bf);
+  
+
+ }
+ 
+}

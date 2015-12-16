@@ -1,0 +1,10 @@
+#-*- coding: utf-8 -*-
+def printArray(a):
+    for i in a:
+        print a,
+
+a = []
+stevci = []
+for i in range(ord("a"), ord("z")+1):
+    stevci.append(chr(i))
+printArray(stevci)

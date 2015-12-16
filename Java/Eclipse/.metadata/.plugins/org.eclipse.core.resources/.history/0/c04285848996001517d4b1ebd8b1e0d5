@@ -1,0 +1,20 @@
+import java.util.*;
+public class Vaje {
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		System.out.print("Vnos: ");
+		String a=input.next();
+		StringBuffer b=new StringBuffer(a);
+		b.append('a');
+		System.out.println("Izpis: "+b);
+		
+		b.insert(0, 'x');
+		b.insert(3, 'x');
+		
+		System.out.println("Izpis: "+b);
+		
+		b=b.reverse();
+		System.out.println(b);
+		input.close();
+	}
+}

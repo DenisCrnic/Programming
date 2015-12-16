@@ -1,0 +1,29 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+class Human:
+    
+    #Attributes
+    name = ""
+    age = 0
+    height = 0
+    
+    #set Functions
+    def setName(a):
+        name = a
+        
+    def setAge(a):
+        age = a
+        
+    def setHeight(a):
+        height = a
+    
+    #get Functions
+    def getName():
+        return name
+        
+    def getAge(a):
+        return age
+        
+    def getHeight(a):
+        return height

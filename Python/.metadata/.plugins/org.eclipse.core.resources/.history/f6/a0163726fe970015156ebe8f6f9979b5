@@ -1,0 +1,16 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+import random
+from Crypto.Random.random import randrange
+while(True):
+    a = raw_input("vnesite besedo: ")
+    if(len(a) == 0):
+        print "vnos ne sme biti prazen!"
+    else:
+        break
+
+if(lower(a) == lower(a[::-1])):
+    print "beseda JE palindrom!"
+else:
+    print "beseda NI palindrom!"

@@ -1,0 +1,5 @@
+#-*-coding: utf-8-*-
+from encodings.idna import ToASCII
+
+b = ord("a")
+print b

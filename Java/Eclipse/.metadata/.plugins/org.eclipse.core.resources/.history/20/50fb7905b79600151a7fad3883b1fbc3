@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Naloga7 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		String prvoIme = input.nextLine();
+		String drugoIme = input.nextLine();
+		
+		int razlikaMedImeni = prvoIme.compareTo(drugoIme);
+		
+		int dolzinaPrvegaImena = prvoIme.length();
+		int doltinaDrugegaImena = drugoIme.length();
+		if(razlikaMedImeni!=0)
+			System.out.println((razlikaMedImeni>0) ? "Prvo ime je po abecedi pred drugim" : "Prvo ime je po abecedi za drugim.");
+		else
+			System.out.println("Besedi sta enaki");
+	}
+}

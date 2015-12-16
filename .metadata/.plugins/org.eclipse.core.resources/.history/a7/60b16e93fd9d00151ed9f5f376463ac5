@@ -1,0 +1,8 @@
+#-*-encoding: utf-8-*-
+
+list1 = ["denis"]
+list1.append("tadej")
+a = "\n".join(list1)
+print a
+del list1[0]
+print list1

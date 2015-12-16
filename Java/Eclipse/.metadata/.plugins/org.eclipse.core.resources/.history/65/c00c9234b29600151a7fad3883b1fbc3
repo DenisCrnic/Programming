@@ -1,0 +1,9 @@
+public class Naloga6{
+     public static void main(String []args){
+    	 randomRange(-5, 5);
+     }
+     
+     public static int randomRange(int min, int max){
+    	 return (int)(Math.random() * ((max - min) + 1)) + min;
+     }
+}

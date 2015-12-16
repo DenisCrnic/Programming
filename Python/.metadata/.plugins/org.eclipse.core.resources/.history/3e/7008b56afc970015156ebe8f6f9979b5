@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+        break
+    except SyntaxError:
+        print "Vnesti morate številko"

@@ -1,0 +1,4 @@
+#-*-encoding: utf-8-*-
+a = raw_input("Vnesite besedo: ")
+a.append("a")
+print a

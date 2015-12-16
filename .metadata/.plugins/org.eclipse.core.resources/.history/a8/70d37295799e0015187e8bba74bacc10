@@ -1,0 +1,7 @@
+#-*-encoding: utf-8-*-
+
+name = "denis"
+stevilo = input("decimalno stevilo: ")
+decimalk = input("koliko decimalk: ")
+
+print "%s je star %.*f let" % (name,  age)

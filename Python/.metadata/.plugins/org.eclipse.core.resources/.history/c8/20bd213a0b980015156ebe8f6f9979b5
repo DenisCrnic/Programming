@@ -1,0 +1,6 @@
+#-*-coding: utf-8-*-
+
+prvo_ime = raw_input("Vnesite 1. ime: ")
+drugo_ime = raw_input("Vnesite 2. ime: ")
+
+print prvo_ime.__cmp__(drugo_ime)

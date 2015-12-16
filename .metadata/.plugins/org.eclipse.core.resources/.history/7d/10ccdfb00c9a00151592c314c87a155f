@@ -1,0 +1,10 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+print ignoreSpaces("Denis je car")
+a = [["denis", "tadej", "simona"],["erik","aleks"],["zan"]]
+b = ["denis", "tadej", "simona"]
+printArray(a)
+printArray(b)
+
+print dir()

@@ -1,0 +1,31 @@
+#-*-encoding: utf-8-*-
+
+from numpy.core.defchararray import lower
+
+
+def ignoreSpaces(a):
+    """Returns a string without spaces"""
+    b = ""
+    for i in a:
+        if(i == ' '):
+            continue
+        else:
+            b += i
+    return b
+    
+while(True):
+    a = raw_input("vnesite besedo: ")
+    if(len(a) == 0):
+        print "vnos ne sme biti prazen!"
+    else:
+        break
+
+a = ignoreSpaces(a)
+b = a[::-1]
+
+if(lower(a) == lower(b):
+    print a[::-1]
+    print "beseda JE palindrom!"
+else:
+    print a
+    print "beseda NI palindrom!"

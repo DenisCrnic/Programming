@@ -1,0 +1,14 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+import random
+from Crypto.Random.random import randrange
+while(True):
+    try:
+        a = raw_input("vnesite besedo")
+    except:
+        print "vnos nesme biti prazen"
+
+
+for i in range(0,10):
+    print randrange(-5, 6),

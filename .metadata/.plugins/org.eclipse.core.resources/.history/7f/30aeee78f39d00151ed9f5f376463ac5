@@ -1,0 +1,11 @@
+#-*-encoding: utf-8-*-
+import functions
+from __builtin__ import str
+
+a = {"denis" : "črnič",
+     "tadej" : "črnič",
+     "žan" : "spehonja žibrat",
+     "erik" : "maček"}
+
+if (type("denis") == type(string)):
+    print je string

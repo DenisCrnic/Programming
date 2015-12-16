@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+from lxml import html
+import requests
+import time
+
+while True:
+    page = requests.get("http://www.twitch.tv/tsm_dyrus/chat?popout=")
+    tree = html.fromstring(page.content)
+    messages = tree.xpath('//div[@title="buyer-name"]/text()')

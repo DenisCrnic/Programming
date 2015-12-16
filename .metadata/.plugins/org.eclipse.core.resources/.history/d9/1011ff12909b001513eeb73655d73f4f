@@ -1,0 +1,7 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+a = ("denis", "črnič", "tadej", "brat")
+b = dict(a)
+
+print b

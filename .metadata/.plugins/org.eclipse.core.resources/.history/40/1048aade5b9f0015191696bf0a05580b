@@ -1,0 +1,14 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+def void stavekKiImaVecSam(a, b):
+    samoglasniki = ['a', 'e', 'i', 'o', 'u']
+    samInA, samInB = 0, 0
+    for i in samoglasniki:
+        samInA += a.count(i)
+        samInB += b.count(i)
+    print "samoglasnikov v a:",samInA
+    print "samoglasnikov v b:",samInB
+    
+print stavekKiImaVecSam(raw_input("vnesite prvi stavek: "),
+                        raw_input("vnesite drugi stavek: "))

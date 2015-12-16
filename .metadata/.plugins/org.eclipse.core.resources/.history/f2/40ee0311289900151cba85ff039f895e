@@ -1,0 +1,14 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def print_array(a):
+    for i in a:
+        print i,
+    print ""
+
+a = deque(["denis", "je", "car"])
+print_array(a)
+a.appendleft("tadej")
+print_array(a)
+a.popleft()
+print_array(a)

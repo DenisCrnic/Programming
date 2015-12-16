@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Naloga4{
+
+     public static void main(String []args){
+    	 Scanner input = new Scanner(System.in);
+    	 int a = input.nextInt();
+    	 String b="";
+    	 while(a>0){
+    		 b+=a%10;
+    		 a/=10
+    	 }
+    	 System.out.print("izpis: "+b);
+     }
+}

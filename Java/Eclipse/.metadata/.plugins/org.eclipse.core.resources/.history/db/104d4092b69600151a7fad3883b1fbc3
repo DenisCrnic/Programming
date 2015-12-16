@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Naloga7 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		String prvoIme = input.nextLine();
+		String drugoIme = input.nextLine();
+		
+		int razlikaMedImeni = prvoIme.compareTo(drugoIme);
+		
+		int dolzinaPrvegaImena = prvoIme.length();
+		int doltinaDrugegaImena = drugoIme.length();
+		
+		System.out.println((razlikaMedImeni>0) ? "prvo je večje od drugega" : "drugo je večje od prvega");
+	}
+}

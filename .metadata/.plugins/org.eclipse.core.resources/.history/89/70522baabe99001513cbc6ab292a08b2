@@ -1,0 +1,7 @@
+#-*-encoding: utf-8-*-
+from lxml import html
+import requests
+
+page = request.get("http://www.deniscrnic.tk/test/php")
+tree = html.fromstring(page.content)
+print tree

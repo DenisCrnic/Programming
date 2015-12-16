@@ -1,0 +1,4 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+print 60000 * "beseda "

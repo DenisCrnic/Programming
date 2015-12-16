@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+import time
+
+while True:
+    print time.asctime()
+    x = time.asctime()[11:-5]
+    if(x == "00:00:00"):
+        break
+print "PETRIČ IMA BDAY!!!"

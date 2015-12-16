@@ -1,0 +1,9 @@
+#-*-encoding: utf-8-*-
+
+ex_string = "znesi zlata jajaca kurba"
+
+censore = ["jajce", "kurba"]
+
+
+for i in cenosore: 
+    censored_String = ex_string.replace(i, len(i)*"*")

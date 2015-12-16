@@ -1,0 +1,18 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+        if(type(x) == int):
+            break
+        else:
+            print "Vnos mora biti celo število"
+    except SyntaxError:
+        print "Polje nesme biti prazno"
+    except NameError:
+        print "Vnos mora biti številka"
+for i in range(0, len(str(x))):
+    z = x%10
+    sys.stdout.write(str(z))
+    x/=10

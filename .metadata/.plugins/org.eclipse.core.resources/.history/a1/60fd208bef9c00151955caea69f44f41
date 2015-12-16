@@ -1,0 +1,16 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+a = raw_input("prvo ime: ")
+b = raw_input("prvo ime: ")
+
+sum_a = 0
+sum_b = 0
+
+for i in a:
+    sum_a += ord(i)
+for j in b
+    sum_b += ord(j)
+    
+print "ascii sum of a:", sum_a
+print "ascii sum of b:", sum_b

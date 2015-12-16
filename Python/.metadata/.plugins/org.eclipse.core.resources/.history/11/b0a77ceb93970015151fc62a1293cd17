@@ -1,0 +1,42 @@
+#-*- coding: utf-8 -*-
+
+def printList(a):
+    if(len(a)==0):
+        print "\nCurrent table is empty "
+    else:
+        print "Current table: "
+        for i in a:
+            print i,
+
+run = True
+print("Welcome to list creator!")
+table = []
+while(run):
+    try:
+        printList(table)
+        select = raw_input("""\n
+a - add an element to the end of the list
+i - inserts and element to the index given in next input
+dn - deletes the first element by given name
+di - deletes the element from index given in next input
+q - exit table creator
+
+selection: """)
+        
+        if(select == 'a'):
+            add_element = raw_input("name of the element: ")
+            table.append(add_element)
+        elif(select == 'i'):
+            insert_element = raw_input("name of the element: ")
+            insert_index = input("which index to insert element to: ")
+            table.insert(insert_index, insert_element)
+        elif(select == 'dn'):
+            delete_element = raw_input("which element to delete?")
+            table.remove(delete_element)
+        elif(select == 'di'):
+            pass
+        else:
+            print "Invalid selection!"
+    except:
+        print "Something went wrong"
+        break

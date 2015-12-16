@@ -1,0 +1,8 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+a = deque(["denis", "je", "car"])
+
+
+for i in a:
+    print i,

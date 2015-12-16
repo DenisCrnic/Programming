@@ -1,0 +1,8 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+while True:
+    a = 1
+    b = 1
+    a**b
+    a += 1

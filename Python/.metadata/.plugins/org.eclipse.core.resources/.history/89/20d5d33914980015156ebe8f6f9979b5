@@ -1,0 +1,38 @@
+#-*-coding: utf-8-*-
+
+prvo_ime = raw_input("Vnesite 1. ime: ")
+drugo_ime = raw_input("Vnesite 2. ime: ")
+
+len_prvo = len(prvo_ime)
+len_drugo = len(drugo_ime)
+
+if(len_prvo != len_drugo):
+    print "1."
+    if(len_prvo > len_drugo):
+        print "2."
+        for i in range(0, len_drugo):
+            print "3.a"
+            if (prvo_ime[i] < drugo_ime[i]):
+                print "A: prvo ime je prej po abecedi"
+                break
+            elif(prvo_ime[i] > drugo_ime[i]):
+                print "A: drugo ime je prej po abecedi"
+                break
+    if(len_prvo < len_drugo):
+        print "2."
+        for i in range(0, len_drugo):
+            print "3.b"
+            if (prvo_ime[i] < drugo_ime[i]):
+                print "B: prvo ime je prej po abecedi"
+                break
+            elif(prvo_ime[i] > drugo_ime[i]):
+                print "B: drugo ime je prej po abecedi"
+                break
+else:
+    for i in range(0, len(prvo_ime)):
+        if (prvo_ime[i] < drugo_ime[i]):
+            print "prvo ime je prej po abecedi"
+            break 
+        if (prvo_ime[i] > drugo_ime[i]):
+            print "drugo ime je prej po abecedi"
+            break

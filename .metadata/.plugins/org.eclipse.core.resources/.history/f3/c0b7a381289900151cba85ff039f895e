@@ -1,0 +1,23 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def print_array(a):
+    for i in a:
+        print "-",i,"\n"
+
+
+to_do_list = deque([])
+run = True
+while run:
+    print_array(to_do_list)
+    select = raw_input("""\
+TO DO!
+a - add task
+d - remove last task
+""")
+    if (select == "a"):
+        task = raw_input("to do: ")
+        to_do_list.appendleft(task)
+    elif (select == "d"):
+        to_do_list.popleft()
+    

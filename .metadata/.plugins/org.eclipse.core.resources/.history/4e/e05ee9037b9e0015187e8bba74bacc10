@@ -1,0 +1,13 @@
+#-*-encoding: utf-8-*-
+
+ex_string = "to je zelo dolg string in ima zelo veliko besed, ampak res zelo zelo veliko"
+
+kater = "zelo"
+od_katerega_dalje = 1
+st = 0
+index = 0
+
+for i in range(len(ex_string)):
+    if (ex_string.find(kater, i) != -1):
+        print "found sth"
+    

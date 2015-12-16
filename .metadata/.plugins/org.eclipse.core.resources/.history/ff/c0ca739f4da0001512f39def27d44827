@@ -1,0 +1,15 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+from string import lowercase
+
+def stavekKiImaVecSam(a, b):
+    samoglasniki = ['a', 'e', 'i', 'o', 'u']
+    samInA, samInB = 0, 0
+    for i in samoglasniki:
+        samInA += a.lower().count(i)
+        samInB += b.lower().count(i)
+    print "samoglasnikov v a:",samInA
+    print "samoglasnikov v b:",samInB
+    
+stavekKiImaVecSam(raw_input("vnesite prvi stavek: "),
+                  raw_input("vnesite drugi stavek: "))

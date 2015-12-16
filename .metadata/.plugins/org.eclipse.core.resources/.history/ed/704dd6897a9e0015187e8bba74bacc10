@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+
+ex_string = "to je zelo dolg string in ima zelo veliko besed"
+
+print ex_string[ex_string.find("zelo", 10):]

@@ -1,0 +1,20 @@
+#-*-coding: utf-8-*-
+
+prvo_ime = raw_input("Vnesite 1. ime: ")
+drugo_ime = raw_input("Vnesite 2. ime: ")
+
+len_prvo = len(prvo_ime)
+len_drugo = len(prvo_ime)
+
+if(len_prvo != len_drugo):
+    if(len_prvo > len_drugo):
+        for i in range(0, len_drugo):
+            if (prvo_ime[i] < drugo_ime[i]):
+                print "prvo ime je prej po abecedi"
+            elif(prvo_ime[i] > drugo_ime[i]):
+                print "drugo ime je prej po abecedi"
+else:
+    print "imeni sta enaki" 
+    else:
+        for i in range(0, len_prvo):
+            

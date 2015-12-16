@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class Naloga13 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		String s = input.nextLine();
+		String[] y = {"pizda", "kurac", "fuck"};
+		String censored = cenzura(s, y);
+		System.out.print(censored);
+		input.close();
+	}
+	
+	public static String cenzura(String a, String tab[]){
+		String[] vnos = a.split(" ");
+		String cenzuriranStavek = "";
+		
+		for(int i = 0; i < vnos.length-1; i++){
+			System.out.println("i: "+i);
+			for(int j = 0; j < tab.length-1; j++){
+				System.out.println("j: "+j);
+				if(vnos[i] == tab[i]){
+					System.out.println("vnos[i]= "+vnos[i]);
+					vnos[i]=zamenjavaBesede(vnos[i]);
+					System.out.println("zaznana cenzura");
+				}
+			}
+			cenzuriranStavek=cenzuriranStavek + vnos[i] + " ";
+		}
+		
+		return cenzuriranStavek;
+	}
+	public static String zamenjavaBesede(String a){
+		String b="";
+		for(int i = 0; i < a.length(); i++){
+			b+='*';
+		}
+		System.out.println(b)
+		return b;
+	}
+}

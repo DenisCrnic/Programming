@@ -1,0 +1,10 @@
+#-*-encoding: utf-8-*-
+import formatter
+from UserString import MutableString
+x = raw_input("Vnos besede: ")
+y = raw_input("Vnos črke: ")
+z = 0
+for i in x:
+    if i == y:
+        z += 1
+print z

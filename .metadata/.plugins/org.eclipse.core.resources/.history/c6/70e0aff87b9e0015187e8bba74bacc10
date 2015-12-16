@@ -1,0 +1,18 @@
+#-*-encoding: utf-8-*-
+
+ex_string = "to je zelo dolg string in ima zelo veliko besed, ampak res zelo zelo veliko"
+
+beseda = "zelo"
+od_katere_ponovitve = 2
+index = ex_string.find("zelo")
+
+st = 0
+
+while True:
+    index = ex_string.find("zelo", index+1)
+    st += 1
+    if (st > od_katere_ponovitve):
+        print st
+        print ex_string.find("zelo", index+1)
+    if (index == -1):
+        break

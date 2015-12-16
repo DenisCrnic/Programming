@@ -1,0 +1,44 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+class Human:
+    
+    #Attributes
+    name = ""
+    age = 0
+    height = 0
+    
+    #set Functions
+    def setName(self, a):
+        self.name = a
+        
+    def setAge(self, a):
+        self.age = a
+        
+    def setHeight(self, a):
+        self.height = a
+    
+    #get Functions
+    def getName(self):
+        return self.name
+        
+    def getAge(self):
+        return self.age
+        
+    def getHeight(self):
+        return self.height
+    
+def Main():
+    denis = Human()
+    denis.setName("Denis")
+    denis.setAge()
+    denis.setHeight()
+    
+    print denis.getName()
+    print denis.getAge()
+    print denis.getHeight()
+    
+    
+    
+if __name__ == '__main__':
+    Main()

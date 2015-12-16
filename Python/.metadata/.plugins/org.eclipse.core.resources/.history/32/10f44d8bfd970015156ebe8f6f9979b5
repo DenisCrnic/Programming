@@ -1,0 +1,19 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+import random
+from Crypto.Random.random import randrange
+while(True):
+    try:
+        x = input("Vnos številke: ")
+        if(type(x) == int):
+            break
+        else:
+            print "Vnos mora biti celo število"
+    except SyntaxError:
+        print "Polje nesme biti prazno"
+    except NameError:
+        print "Vnos mora biti številka"
+
+for i in range(0,10):
+    print randrange(-5, 5)

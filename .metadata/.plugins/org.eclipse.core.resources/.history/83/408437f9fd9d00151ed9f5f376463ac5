@@ -1,0 +1,7 @@
+#-*-encoding: utf-8-*-
+import time
+
+while True:
+    print time.asctime()
+    time.sleep(1)
+    if 

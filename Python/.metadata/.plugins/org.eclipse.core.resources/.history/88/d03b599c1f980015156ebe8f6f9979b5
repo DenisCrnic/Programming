@@ -1,0 +1,6 @@
+#-*- coding: utf-8 -*-
+
+a = []
+stevci = []
+for i in range(ord("a"), ord("z")):
+    print i

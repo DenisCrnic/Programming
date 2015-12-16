@@ -1,0 +1,13 @@
+#-*- encoding: utf-8 -*-
+from _collections import deque
+
+def return_len(x):
+    y = len(x)
+    return y
+
+def print_array(a):
+    for i in a:
+        print "-",i
+        
+        
+a = [for i*2 in range(20)]

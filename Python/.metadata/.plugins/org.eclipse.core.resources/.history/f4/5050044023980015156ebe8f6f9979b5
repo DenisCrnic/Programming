@@ -1,0 +1,15 @@
+#-*- coding: utf-8 -*-
+def printArray(a):
+    for i in a:
+        print i,
+    print ""
+
+a = []
+crke = []
+for i in range(ord("a"), ord("z")+1):
+    x = chr(i)
+    crke.append(x)
+stevec = 0
+for i in range(,2):
+    for j in crke:
+        print j*i

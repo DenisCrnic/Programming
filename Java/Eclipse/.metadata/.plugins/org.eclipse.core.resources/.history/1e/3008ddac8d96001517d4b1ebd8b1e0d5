@@ -1,0 +1,16 @@
+import java.util.*;
+public class Naloga2 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnos: ");
+		String a = input.next();
+		StringBuffer b = new StringBuffer(a);
+		b.insert(b.length(), 'a');
+		System.out.println(b);
+		for(int i=1; i<b.length(); i+=3){
+			b.deleteCharAt(i);
+		}
+		System.out.println("Izpis: "+b);
+		input.close();
+	}
+}

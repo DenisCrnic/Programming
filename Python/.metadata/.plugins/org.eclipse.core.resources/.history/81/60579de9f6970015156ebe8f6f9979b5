@@ -1,0 +1,11 @@
+#-*-encoding: utf-8-*-
+import formatter
+
+x = raw_input("name: ")
+y = raw_input("glagol: ")
+z = raw_input("samostalnik: ")
+
+i = r'ma lol ' ' samo kej je '' 
+
+a = "{0} {1} {2}".format(x, y, z)
+print a

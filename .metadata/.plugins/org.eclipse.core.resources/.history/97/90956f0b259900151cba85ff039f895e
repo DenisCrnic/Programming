@@ -1,0 +1,13 @@
+#-*- encoding: utf-8 -*-
+def myFunction(to_je_prvi_argument,
+               to_je_drugi_argument):
+    """\
+To je dokumentacija
+tako se piše dokumentacijo
+lol
+dela? XD
+majkemi
+    """
+    print a
+
+print myFunction.__doc__

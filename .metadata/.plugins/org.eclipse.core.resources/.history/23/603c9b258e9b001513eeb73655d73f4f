@@ -1,0 +1,3 @@
+import gl, GL, time
+def main():
+    gl.foreground()

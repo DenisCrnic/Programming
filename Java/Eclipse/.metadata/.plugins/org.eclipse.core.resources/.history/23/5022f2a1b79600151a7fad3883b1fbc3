@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Naloga7 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnesite prvo ime: ");
+		String prvoIme = input.nextLine();
+		System.out.print("Vnesite drugo ime: ");
+		String drugoIme = input.nextLine();
+		
+		int razlikaMedImeni = prvoIme.compareTo(drugoIme);
+		
+		int dolzinaPrvegaImena = prvoIme.length();
+		int dolzinaDrugegaImena = drugoIme.length();
+		
+		System.out.println(razlikaMedImeni);
+		if(razlikaMedImeni != 0)
+			System.out.println((razlikaMedImeni < 0) ? "Prvo ime je po abecedi pred drugim" : "Prvo ime je po abecedi za drugim.");
+		else
+			System.out.println("Besedi sta enaki");
+		System.out.println("Dolzina prvega imena: " + dolzinaDrugegaImena);
+		System.out.println("Dolzina drugega imena: " + dolzinaPrvegaImena);
+		
+		input.close();
+	}
+}

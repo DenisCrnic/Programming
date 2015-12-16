@@ -1,0 +1,12 @@
+#-*- encoding: utf-8 -*-
+def myFunction(a):
+    """
+    To je dokumentacija
+    tako se piše dokumentacijo
+    lol
+    dela? XD
+majkemi
+    """
+    print a
+
+print myFunction.__doc__

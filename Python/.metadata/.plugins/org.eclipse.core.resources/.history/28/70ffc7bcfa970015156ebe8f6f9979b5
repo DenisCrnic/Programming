@@ -1,0 +1,13 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+        break
+        except:
+            print "Vnesite številko:"
+for i in range(0, len(str(x))):
+    z = x%10
+    sys.stdout.write(str(z))
+    x/=10

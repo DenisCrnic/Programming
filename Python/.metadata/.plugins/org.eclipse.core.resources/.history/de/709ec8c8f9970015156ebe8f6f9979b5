@@ -1,0 +1,8 @@
+#-*-encoding: utf-8-*-
+import formatter
+from UserString import MutableString
+x = input("Vnos številke: ")
+for i in range(0, len(str(x))):
+    z = x%10
+    print z
+    x/=10

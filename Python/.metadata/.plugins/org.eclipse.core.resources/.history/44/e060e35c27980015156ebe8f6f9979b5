@@ -1,0 +1,13 @@
+#-*- coding: utf-8 -*-
+
+def enkripcija(a, key):
+    for i in a:
+        x += chr(ord(i) + key)
+while True:
+    a = raw_input("Vnesite besedilo: ")
+    while True:
+        try:
+            b = input("Vnesite kljuc: ")
+            break
+        except:
+            print "vnos mora biti stevilo"

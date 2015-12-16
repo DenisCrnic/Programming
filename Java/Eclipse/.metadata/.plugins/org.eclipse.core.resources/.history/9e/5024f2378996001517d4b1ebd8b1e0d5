@@ -1,0 +1,13 @@
+import java.util.*;
+public class Vaje {
+	public static void main(String[] args){
+		Scanner input=new Scanner(System.in);
+		System.out.print("Vnos: ");
+		String a=input.next();
+		StringBuffer b=new StringBuffer(a);
+		b.append('a');
+		System.out.print("Izpis: "+b);
+		
+		input.close();
+	}
+}

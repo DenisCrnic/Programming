@@ -1,0 +1,14 @@
+#-*-encoding: utf-8-*-
+import time
+time_list = {"hours" : 0, "minutes" : 0, "seconds" : 0}
+
+while True:
+    time_list["seconds"] += 1
+    if (time_list["seconds"] == 60):
+        time_list["minutes"] += 1
+        time_list["seconds"] = 0
+        if (time_list["minutes"] == 60):
+            time_list["hours"] += 1
+            time_list["minutes"] = 0
+            time_list["seconds"] = 0
+    print time_list["hours"] + ":" + time_list["minutes"] + ":" + time_list["seconds"]

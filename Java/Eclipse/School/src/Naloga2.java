@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Naloga2 {
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.print("Vnos: ");
+		String a = input.next();
+		StringBuffer b = new StringBuffer(a);
+		b.insert(b.length(), 'a');
+		for(int i=1; i<b.length(); i++)
+			b.deleteCharAt(i);
+		System.out.println("Izpis: "+b);
+		input.close();
+	}
+}

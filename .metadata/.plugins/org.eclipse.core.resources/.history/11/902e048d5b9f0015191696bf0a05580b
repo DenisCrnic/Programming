@@ -1,0 +1,9 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+
+def stavekKiImaVecSam(a):
+    samoglasniki = ['a', 'e', 'i', 'o', 'u']
+    samInA = a.count(for i in samoglasniki)
+    print samInA
+    
+print stavekKiImaVecSam("danes je lep dan")

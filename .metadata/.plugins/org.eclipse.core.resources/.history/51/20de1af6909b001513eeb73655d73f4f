@@ -1,0 +1,5 @@
+#-*-encoding: utf-8-*-
+from functions import *
+
+for i, y in enumerate(range(100)):
+    print str(y), str(i**2).rjust(4), str(i**3).rjust(4)

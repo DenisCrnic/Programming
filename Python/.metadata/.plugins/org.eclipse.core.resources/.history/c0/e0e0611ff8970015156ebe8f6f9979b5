@@ -1,0 +1,6 @@
+#-*-encoding: utf-8-*-
+import formatter
+from UserString import MutableString
+x = MutableString("Denis je lep")
+x[0].insert("d")
+print x

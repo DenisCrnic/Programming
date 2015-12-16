@@ -1,0 +1,8 @@
+#! /usr/bin/python
+#-*-encoding: utf-8-*-
+import math
+
+a = raw_input("kaj je danes?")
+b = raw_input("kakšno je danes?")
+
+print "danes je zelo %s %s" % (b, a)

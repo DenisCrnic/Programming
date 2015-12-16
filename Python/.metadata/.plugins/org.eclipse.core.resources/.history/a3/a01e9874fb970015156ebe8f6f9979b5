@@ -1,0 +1,10 @@
+#-*-encoding: utf-8-*-
+import sys
+from UserString import MutableString
+while(True):
+    try:
+        x = input("Vnos številke: ")
+    '''
+    except Exception as exception:
+        print exception.__class__.__name__
+    '''
