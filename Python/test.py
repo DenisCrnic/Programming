@@ -1,13 +1,14 @@
 #! /usr/bin/python
-#-*-encoding: utf-8-*-
-from Person import *
-from Family import *
+# -*- encoding: utf-8 -*-
 
-def Main():
-    denis = Person('Denis', 17, 165.5, 'male')
-    undefined_persons = {'Denis' : denis}
-    crnic = Family('Crnic', undefined_persons)
-    print crnic
+def printDict(n):
+    if len(n) == 0:
+        return
+    else:
+        print n
+        return n[-1]
+def main():
+    lista = ['Denis', 'mama', 'tata']
+    print printDict(lista)
 
-if __name__ == '__main__':
-    Main()
+if (__name__ == '__main__'): main()
